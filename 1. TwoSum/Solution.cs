@@ -1,4 +1,6 @@
-﻿namespace TwoSum
+﻿using System;
+
+namespace TwoSum
 {
     public static class Solution
     {
@@ -9,11 +11,13 @@
 
         public static int[] TwoSum(int[] nums, int target)
         {
-            for (int index = 0; index < nums.Length; index++)
+            for (int i = 0; i < nums.Length; i++)
             {
-                var matchIndex = nums[(index + 1)..].ToList().IndexOf(target - nums[index]);
-                if (matchIndex != -1)
-                    return [index, matchIndex + index + 1];
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (target == nums[i] + nums[j])
+                        return [i, j];
+                }
             }
 
             return [];
