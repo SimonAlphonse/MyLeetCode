@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace MyLeetCode
+namespace MyLeetCode.Template
 {
-    public static class Solution
+    public static partial class Solution
     {
         public static void Main()
         {

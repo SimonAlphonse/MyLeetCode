@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace MyLeetCode
+namespace MyLeetCode.TwoSum
 {
-    public static class Solution
+    public static partial class Solution
     {
         public static void Main()
         {
