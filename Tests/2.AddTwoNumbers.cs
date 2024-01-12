@@ -8,10 +8,10 @@ public partial class Tests
     [InlineData(new[] { 2, 4, 3 }, new[] { 5, 6, 4 }, new[] { 7, 0, 8 })]
     [InlineData(new[] { 0 }, new[] { 0 }, new[] { 0 })]
     [InlineData(new[] { 9, 9, 9, 9, 9, 9, 9 }, new[] { 9, 9, 9, 9 }, new[] { 8, 9, 9, 9, 0, 0, 0, 1 })]
-    public void AddTwoNumbers(int[] l1, int[] l2, int[] output)
+    public void AddTwoNumbers(int[] l1, int[] l2, int[] expected)
     {
-        var result = Solution.AddTwoNumbers(ArrayToListNode(l1), ArrayToListNode(l2));
-        Assert.Equal(ListNodeToArray(result), output);
+        var actual = ListNodeToArray(Solution.AddTwoNumbers(ArrayToListNode(l1), ArrayToListNode(l2)));
+        Assert.Equal(expected, actual);
     }
 
     private int[] ListNodeToArray(ListNode listNode)

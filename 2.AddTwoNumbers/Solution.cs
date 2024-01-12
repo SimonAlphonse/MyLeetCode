@@ -22,12 +22,8 @@
             while (t1 is not null || t2 is not null)
             {
                 int added = (t1?.val ?? 0) + (t2?.val ?? 0) + carry;
-                int val = added % 10;
-
-                result.Add(val);
-
+                result.Add(added % 10);
                 carry = added >= 10 ? 1 : 0;
-
                 t1 = t1?.next; t2 = t2?.next;
             }
 
