@@ -26,6 +26,7 @@
     <ProjectReference Include="..\0.Template\0.Template.csproj" />
     <ProjectReference Include="..\1.TwoSum\1.TwoSum.csproj" />
     <ProjectReference Include="..\2.AddTwoNumbers\2.AddTwoNumbers.csproj" />
+    <ProjectReference Include="..\3.LengthOfLongestSubstring\3.LengthOfLongestSubstring.csproj" />
   </ItemGroup>
 
 </Project>
