@@ -8,9 +8,10 @@ public partial class Tests
     [InlineData("pwwkew", 3)]
     [InlineData("aab", 2)]
     [InlineData("dvdf", 3)]
+    [InlineData("", 0)]
     public void LengthOfLongestSubstring(string s, int expected)
     {
-        var actual = Solution.LengthOfLongestSubstring(s);
+        var actual = new Solution().LengthOfLongestSubstring(s);
         Assert.Equal(expected, actual);
     }
 }
