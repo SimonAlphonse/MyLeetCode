@@ -1,7 +1,4 @@
-﻿using System;
-using System.Reflection;
-
-namespace MyLeetCode.LengthOfLongestSubstring
+﻿namespace MyLeetCode.LengthOfLongestSubstring
 {
     public static class Solution
     {
@@ -12,17 +9,26 @@ namespace MyLeetCode.LengthOfLongestSubstring
 
         public static int LengthOfLongestSubstring(string s)
         {
-            int start = 0, end = 0;
+            HashSet<char> set = []; int max = 0;
 
-            for (int index = 1; index < s.Length; index++)
+            for (int i = 0; i < s.Length;)
             {
-                if (s[start..index].Contains(s[index]))
+                var current = s[i];
+
+                if (set.Contains(current))
                 {
-                    end = index;
+                    i -= set.Count - 1;
+                    max = Math.Max(max, set.Count);
+                    set.Clear();
+                }
+                else
+                {
+                    set.Add(current);
+                    i++;
                 }
             }
 
-            return end - start;
+            return Math.Max(max, set.Count);
         }
     }
 }
