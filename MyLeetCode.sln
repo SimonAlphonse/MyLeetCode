@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.AddTwoNumbers", "2.AddTwo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.LengthOfLongestSubstring", "3.LengthOfLongestSubstring\3.LengthOfLongestSubstring.csproj", "{21C48A87-3467-44B4-8011-E65C1E79B06D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.FindMedianSortedArrays", "4.FindMedianSortedArrays\4.FindMedianSortedArrays.csproj", "{BAB3D0D8-4132-4353-869D-A7DC7A4595CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{21C48A87-3467-44B4-8011-E65C1E79B06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21C48A87-3467-44B4-8011-E65C1E79B06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21C48A87-3467-44B4-8011-E65C1E79B06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB3D0D8-4132-4353-869D-A7DC7A4595CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAB3D0D8-4132-4353-869D-A7DC7A4595CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB3D0D8-4132-4353-869D-A7DC7A4595CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAB3D0D8-4132-4353-869D-A7DC7A4595CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

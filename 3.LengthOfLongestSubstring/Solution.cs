@@ -4,7 +4,8 @@
     {
         public static void Main()
         {
-
+            var control = new object();
+            var status = control is int ? Convert.ToInt32(control) : default;
         }
 
         public int LengthOfLongestSubstring(string s)

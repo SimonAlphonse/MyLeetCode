@@ -2,16 +2,16 @@
 
 namespace MyLeetCode.Template
 {
-    public static partial class Solution
+    public class Solution
     {
         public static void Main()
         {
 
         }
 
-        public static void Template()
+        public void Template()
         {
-            
+
         }
     }
 }
