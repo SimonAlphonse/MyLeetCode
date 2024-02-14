@@ -11,7 +11,7 @@ namespace MyLeetCode.FindMedianSortedArrays
 
         public double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
-            HashSet<int> set = [];
+            List<int> set = [];
 
             for (int i = 0; i < nums1.Length; i++)
                 set.Add(nums1[i]);
@@ -19,10 +19,14 @@ namespace MyLeetCode.FindMedianSortedArrays
             for (int i = 0; i < nums2.Length; i++)
                 set.Add(nums2[i]);
 
-            if (set.Count % 2 == 0)
-                return 1.0 * (set.Skip(set.Count / 2).First() + set.Skip(set.Count / 2 + 1).First()) / 2;
-            else
-                return 1.0 * set.Skip(set.Count / 2 + 1).First();
+            set.Sort();
+
+            return set.Count switch
+            {
+                0 => 0,
+                _ when set.Count % 2 == 0 => (set[set.Count / 2 - 1] + set[set.Count / 2]) / 2.0,
+                _ => set[set.Count / 2]
+            };
         }
     }
 }
