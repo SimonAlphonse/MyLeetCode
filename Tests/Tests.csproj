@@ -28,6 +28,7 @@
     <ProjectReference Include="..\2.AddTwoNumbers\2.AddTwoNumbers.csproj" />
     <ProjectReference Include="..\3.LengthOfLongestSubstring\3.LengthOfLongestSubstring.csproj" />
     <ProjectReference Include="..\4.FindMedianSortedArrays\4.FindMedianSortedArrays.csproj" />
+    <ProjectReference Include="..\5LongestPalindrome\5.LongestPalindrome.csproj" />
   </ItemGroup>
 
 </Project>
